@@ -551,16 +551,16 @@
                  <div class="form-header">
                      Message Me
                  </div>
-                 <form id="myForm" method="POST" name="contact-form" netlify-data="true">
+                 <form id="contact-form" method="POST" name="contact-form">
                     <div class="input-line">
-                        <input name="nombre" id="name" type="text" placeholder="Name" class="input-name">
+                        <input name="name" id="name" type="text" placeholder="Name" class="input-name">
                         <input name="email" id="email" type="email" placeholder="Email"  class="input-name">
                     </div>
                     <input type="text" name="tema" id="subject" placeholder="subject" class="input-subject">
-                    <textarea name="mensaje" id ="body" class="input-textarea" placeholder="message"></textarea>
-                    <input type="hidden" name="form-name" value="contact">
+                    <textarea name="message" id ="body" class="input-textarea" placeholder="message"></textarea>
+                 
 
-                    <button type="button" id ="submit" value="send">Submit</button>
+                    <button type="button" id ="submit" name="submit" value="send">Submit</button>
           
                  </form>
                
