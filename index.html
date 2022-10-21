@@ -593,7 +593,7 @@
                       <p>+58 4127512604</p>
                 </div>
               </div>
-              
+              <a href="mailto:josemifonseca.2016@gmail.com" id="trucazo"/>
               <div class="contect-info-content-line">
                   <img src="./images/icon-email.png" class="icon" alt="email-icon">
                   <div class="contact-info-icon-text">
@@ -616,6 +616,19 @@
         <!--contact end-->
     </div>
     <!--all the divisions-->
+    <script>
+    const $form = document.querySelector('#contac-form')
+    const $buttonMailto = document.querySelector('#trucazo')
+
+    $form.addEventListener('submit', handleSubmit)
+
+    function handleSubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      $buttonMailto.setAttribute('href', `mailto:josemifonseca.2016@gmail.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
+      $buttonMailto.click()
+    }
+  </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>
